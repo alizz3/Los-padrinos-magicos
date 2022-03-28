@@ -27,7 +27,7 @@ nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.774);
 }
 .logo{
     width: 70px;
