@@ -2,7 +2,7 @@
 
 
 body {
-    background: url(../img/fondo.png) no-repeat center center fixed;
+    background: url(../img/fondo.png) no-repeat center 100% fixed;
     background-size: cover;
 }
 
@@ -13,6 +13,7 @@ body {
     text-decoration: none;
     box-sizing: border-box;
     list-style: none;
+    margin-bottom: ;
 } 
 
 header{
@@ -30,7 +31,7 @@ nav{
     background-color: rgba(0, 0, 0, 0.774);
 }
 .logo{
-    width: 70px;
+    width: 100px;
     margin-left: 20px;
 }
 .bar-btn{
@@ -87,7 +88,8 @@ nav{
 /*responsive desktop*/
 @media screen and (min-width: 768px){
     .logo{
-        margin-left: 50px;
+        margin-left: 60px;
+        width: 110px;
     }    
 
     nav{
