@@ -2,8 +2,7 @@
 
 
 body {
-    font-family: 'Poppins';
-    background: url(../img/responsivefondo.png) no-repeat center 40% fixed;
+    font-family: 'poppins', sans-serif;    background: url(../img/responsivefondo.png) no-repeat center 40% fixed;
     background-size: cover;
 }
 
@@ -110,13 +109,9 @@ nav{
     to{text-shadow: 2px 2px 1px #00FF19;}
 }
 
-
-
-
-
 .text-index{
     width: 70%;
-    font-family: 'Poppins';
+    font-family: 'poppins', sans-serif;    
     font-style: normal;
     font-size: 1rem;
     text-align: center;
@@ -260,24 +255,51 @@ nav{
     /*primera parte desktop*/
 
     .titulo-index{
-        width: 90%;
-        margin-left: 5rem;     
+        display: flex;
+        width: 100%;
         font-family: 'poppins', sans-serif;
         font-style: normal;
         font-weight: 600;
         font-size: 40px;
         text-transform: uppercase;
-        text-align: start;
+        justify-content: center;
+        align-items: flex-end;
         color: rgba(255, 255, 255, 0);
         animation: text-animate 2s ease-in-out 1s infinite alternate-reverse;
+        text-align: justify;
+
     }
 
     .text-index{
-        margin-left: 5rem;
-        width: 30%;
+        display: flex;
+        justify-content: flex-end;
+        align-items: baseline;
+        height: fit-content;
+        text-align: justify;
+        width: 70%;
+
+    }
+
+    .img-index{
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
     }
 
 
+    .titulo-index{grid-area: titulo;}
+    .text-index{grid-area: texto;}
+    .img-index{grid-area: img;}
+
+    .inicio{
+        display: grid;
+        grid-template-columns: 45% 55%;
+        grid-template-rows: auto auto auto;
+        gap: 10px;
+        grid-template-areas:
+            'titulo img'
+            'texto img';
+    }
 
     /*personajes*/ /*quitar un s*/
     .personajess{
