@@ -2,7 +2,8 @@
 
 
 body {
-    font-family: 'poppins', sans-serif;    background: url(../img/responsivefondo.png) no-repeat center 40% fixed;
+    font-family: 'poppins', sans-serif;    
+    background: url(../img/responsivefondo.png) no-repeat center 40% fixed;
     background-size: cover;
 }
 
@@ -124,6 +125,7 @@ nav{
 }
 
 .img-index{
+    width: 80%;
     padding: 1rem;
     /*background: rgba(0, 0, 0, 0.2);*/
     /*backdrop-filter: blur(20px);*/
@@ -284,6 +286,7 @@ nav{
         display: flex;
         justify-content: flex-start;
         align-items: flex-start;
+        width: 80%;
     }
 
 
