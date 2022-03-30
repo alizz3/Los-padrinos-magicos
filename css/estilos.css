@@ -97,7 +97,13 @@ nav{
 }
 
 /*personajes*/
+.personajes{
+    display: grid;
+grid-template-columns: repeat(14, 1fr);
+width: 5215px;
+height: 478px;
 
+}
 .container-personaje-1{
     width: 353px;
     height: 478px;
@@ -106,6 +112,10 @@ nav{
     box-sizing: border-box;
     backdrop-filter: blur(10px);
     border-radius: 54px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
 }
 .container-personaje-2{
     width: 353px;
@@ -115,6 +125,10 @@ nav{
     box-sizing: border-box;
     backdrop-filter: blur(10px);
     border-radius: 54px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
 }
 .container-personaje-3{
     width: 353px;
@@ -122,9 +136,13 @@ nav{
     background: rgba(142, 10, 230, 0.5);
     border: 10px solid #8E0AE6;
     box-sizing: border-box;
-    backdrop-filter: blur(34px);
+    backdrop-filter: blur(10px);
     border-radius: 54px;
     transform: matrix(-1, 0, 0, 1, 0, 0);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
 }
 
 /*responsive desktop*/
