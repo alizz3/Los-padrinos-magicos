@@ -2,6 +2,7 @@
 
 
 body {
+    font-family: 'Poppins';
     background: url(../img/responsivefondo.png) no-repeat center 40% fixed;
     background-size: cover;
 }
@@ -10,8 +11,6 @@ body {
     margin: 0;
     padding: 0;
     text-decoration: none;
-    box-sizing: border-box;
-    list-style: none;
 } 
 
 
@@ -129,7 +128,21 @@ nav{
     border-radius: 13px;
 }
 
+.img-index{
+    padding: 1rem;
+    /*background: rgba(0, 0, 0, 0.2);*/
+    /*backdrop-filter: blur(20px);*/
+    border-radius: 54px;
+    margin: 0 auto;
+    animation: img-background 1s ease 1s infinite alternate-reverse;
 
+}
+
+@keyframes img-background {
+    from {background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), linear-gradient(90deg, rgba(239, 23, 140, 0.34) 10.94%, rgba(114, 82, 135, 0.34) 65.01%, rgba(0, 255, 25, 0.34) 100%);}
+        to {background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),linear-gradient(0deg, rgba(239, 23, 140, 0.34) 10.94%, rgba(114, 82, 135, 0.34) 65.01%, rgba(0, 255, 25, 0.34) 100%);}
+}
+    
 /*personajes*/
 .personajess{
     display: grid;
@@ -177,12 +190,24 @@ nav{
 
 }
 
+.inicio{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+
+
+
+
 /*responsive desktop*/
 @media screen and (min-width: 768px){
     body {
         background: url(../img/fondo.png) no-repeat center 100% fixed;
         background-size: cover;
     }
+
+
 
     .grid-navbar{
         height: 100px;
@@ -192,8 +217,8 @@ nav{
     }
 
     .logo{
-        margin-left: 40px;
-        width: 170px;
+        margin-left: 30px;
+        width: 130px;
         filter: blur(0px);
     }
 
@@ -208,40 +233,41 @@ nav{
         background: none;
         transition: none;
         text-align: right;
-        margin-right: 50px;
+        margin-right: 0px;
     }
 
     .nav-menu li{
         display: inline-block;
         line-height: 100px;
-        margin: 0 20px;
+        margin: 0 15px;
         transition: none;
 
     }
 
     .nav-menu li a{
-        font-size: 16px;
+        font-size: 1rem;
     }
     /*primera parte desktop*/
 
     .titulo-index{
-    width: 90%;
-    margin-left: 5rem;
-    
-    font-family: 'poppins', sans-serif;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 40px;
-    text-transform: uppercase;
-    text-align: start;
-    color: rgba(255, 255, 255, 0);
-    animation: text-animate 2s ease-in-out 1s infinite alternate-reverse;
+        width: 90%;
+        margin-left: 5rem;     
+        font-family: 'poppins', sans-serif;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 40px;
+        text-transform: uppercase;
+        text-align: start;
+        color: rgba(255, 255, 255, 0);
+        animation: text-animate 2s ease-in-out 1s infinite alternate-reverse;
     }
 
     .text-index{
         margin-left: 5rem;
         width: 30%;
     }
+
+
 
     /*personajes*/ /*quitar un s*/
     .personajess{
