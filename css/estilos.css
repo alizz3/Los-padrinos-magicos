@@ -95,14 +95,13 @@ nav{
 #check:checked ~ .nav-menu li{
     display: block;
 }
+/*first part*/
 
 /*personajes*/
 .personajes{
     display: grid;
-grid-template-columns: repeat(14, 1fr);
-width: 5215px;
-height: 478px;
-
+    grid-template-columns: repeat(14, 1fr);
+    gap: 10px;
 }
 .container-personaje-1{
     width: 353px;
@@ -191,4 +190,11 @@ height: 478px;
         font-size: 16px;
     }
     
+    /*personajes*/
+    .personajes{
+        display: grid;
+        grid-template-columns: repeat(7, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        gap: 25px;
+    }
 }
