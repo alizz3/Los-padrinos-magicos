@@ -119,10 +119,14 @@ nav{
     width: 90%;
     font-family: 'Poppins';
     font-style: normal;
-    font-size: 1.5rem;
+    font-size: 1rem;
     text-align: center;
     color: #FFFFFF;
     margin: 20px 10px;
+    background: linear-gradient(90deg, rgba(239, 23, 140, 0.34) 10.94%, rgba(114, 82, 135, 0.34) 65.01%, rgba(0, 255, 25, 0.34) 100%);
+    backdrop-filter: blur(4px);
+    padding: 1rem;
+    border-radius: 13px;
 }
 
 
@@ -232,7 +236,12 @@ nav{
     text-align: start;
     color: rgba(255, 255, 255, 0);
     animation: text-animate 2s ease-in-out 1s infinite alternate-reverse;
-}
+    }
+
+    .text-index{
+        margin-left: 5rem;
+        width: 30%;
+    }
 
     /*personajes*/ /*quitar un s*/
     .personajess{
