@@ -115,13 +115,13 @@ nav{
 
 
 .text-index{
-    width: 90%;
+    width: 70%;
     font-family: 'Poppins';
     font-style: normal;
     font-size: 1rem;
     text-align: center;
     color: #FFFFFF;
-    margin: 20px 10px;
+    margin: 1rem auto;
     background: linear-gradient(90deg, rgba(239, 23, 140, 0.34) 10.94%, rgba(114, 82, 135, 0.34) 65.01%, rgba(0, 255, 25, 0.34) 100%);
     backdrop-filter: blur(4px);
     padding: 1rem;
@@ -133,7 +133,7 @@ nav{
     /*background: rgba(0, 0, 0, 0.2);*/
     /*backdrop-filter: blur(20px);*/
     border-radius: 54px;
-    margin: 0 auto;
+    margin: 1rem auto;
     animation: img-background 1s ease 1s infinite alternate-reverse;
 
 }
@@ -190,10 +190,20 @@ nav{
 
 }
 
+
+.titulo-index{grid-area: titulo;}
+.text-index{grid-area: texto;}
+.img-index{grid-area: img;}
+
 .inicio{
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
+
+    grid-template-areas:
+        'titulo'
+        'img'
+        'texto';
 }
 
 
