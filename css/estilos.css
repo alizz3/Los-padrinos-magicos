@@ -95,11 +95,7 @@ nav{
 }
 /*first part*/
 .titulo-index{
-    width: 490px;
-    height: 60px;
-    left: 47px;
-    top: 135px;
-    
+    margin: 10px auto;
     font-family: 'poppins', sans-serif;
     font-style: normal;
     font-weight: 600;
@@ -111,7 +107,7 @@ nav{
 }
 
 @keyframes text-animate {
-    from{ text-shadow: 2px 10px 1px #EF178C;}
+    from{ text-shadow: 2px 15px 1px #EF178C;}
     to{text-shadow: 2px 2px 1px #00FF19;}
 }
 
@@ -123,7 +119,7 @@ nav{
     width: 90%;
     font-family: 'Poppins';
     font-style: normal;
-    font-size: 1rem;
+    font-size: 1.5rem;
     text-align: center;
     color: #FFFFFF;
     margin: 20px 10px;
@@ -222,11 +218,26 @@ nav{
     .nav-menu li a{
         font-size: 16px;
     }
+    /*primera parte desktop*/
+
+    .titulo-index{
+    width: 90%;
+    margin-left: 5rem;
     
-    /*personajes*/
+    font-family: 'poppins', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 40px;
+    text-transform: uppercase;
+    text-align: start;
+    color: rgba(255, 255, 255, 0);
+    animation: text-animate 2s ease-in-out 1s infinite alternate-reverse;
+}
+
+    /*personajes*/ /*quitar un s*/
     .personajess{
         display: grid;
-        grid-template-columns: repeat(, 1fr);
+        grid-template-columns: repeat(7, 1fr);
         grid-template-rows: repeat(2, 1fr);
         gap: 25px;
     }
