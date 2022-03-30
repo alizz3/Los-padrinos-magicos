@@ -15,12 +15,25 @@ body {
     list-style: none;
 } 
 
-header{
-    width: 100%;
-    height: 100vh;
+
+.grid-container{
+    display: grid;
 
 }
 
+header{
+    width: 100%;
+    background-color: rgba(255, 255, 0, 0.432);
+}
+
+main{
+    background-color: rgba(0, 0, 255, 0);
+    display: grid;
+}
+
+footer{
+    background-color: rgba(255, 0, 0, 0.301);
+}
 nav{
     height: 100px;
     width: 100%;
@@ -30,7 +43,6 @@ nav{
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), linear-gradient(90.17deg, rgba(0, 255, 25, 0.4) 0%, rgba(114, 82, 135, 0.4) 48.44%, rgba(239, 23, 140, 0.4) 100%);
     backdrop-filter: blur(15px);
     height: 70px;
-
 }
 .logo{
     width: 110px;
@@ -84,6 +96,36 @@ nav{
     display: block;
 }
 
+/*personajes*/
+
+.container-personaje-1{
+    width: 353px;
+    height: 478px;
+    background: rgba(239, 23, 140, 0.5);
+    border: 11px solid #EF178C;
+    box-sizing: border-box;
+    backdrop-filter: blur(10px);
+    border-radius: 54px;
+}
+.container-personaje-2{
+    width: 353px;
+    height: 478px;
+    background: rgba(0, 255, 25, 0.5);
+    border: 10px solid #00930F;
+    box-sizing: border-box;
+    backdrop-filter: blur(10px);
+    border-radius: 54px;
+}
+.container-personaje-3{
+    width: 353px;
+    height: 478px;
+    background: rgba(142, 10, 230, 0.5);
+    border: 10px solid #8E0AE6;
+    box-sizing: border-box;
+    backdrop-filter: blur(34px);
+    border-radius: 54px;
+    transform: matrix(-1, 0, 0, 1, 0, 0);
+}
 
 /*responsive desktop*/
 @media screen and (min-width: 768px){
@@ -92,12 +134,7 @@ nav{
         background-size: cover;
     }
 
-    /*.container-nav{
-        
-
-    }*/
-
-    nav{
+    .grid-navbar{
         height: 100px;
         background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), linear-gradient(90.17deg, rgba(239, 23, 140, 0.4) 0%, rgba(114, 82, 135, 0.4) 48.44%, rgba(0, 255, 25, 0.4) 100%);
         backdrop-filter: blur(15px);
@@ -135,6 +172,5 @@ nav{
     .nav-menu li a{
         font-size: 16px;
     }
-
     
 }
