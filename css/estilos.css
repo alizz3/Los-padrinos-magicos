@@ -263,13 +263,22 @@ main{
 
 
 
-footer h1,a{
+footer a{
     color:#FFFFFF;
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 150%;
+    
+    
 }
+.instagram{
+    margin-top: 10%;
+}
+.github{
+    margin-bottom: 10%;
+}
+
 footer h1{
     color:#FFFFFF;
     display: flex;
@@ -292,7 +301,7 @@ footer {
     grid-template-areas: 
         'Aliz-autor instagram'
         'Aliz-autor github';
-
+    row-gap: 10%;
 }
 
 
