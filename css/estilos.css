@@ -238,7 +238,8 @@ main{
     margin: 0 auto;
     width: 95%;
     background-color: rgba(255, 0, 0, 0);  
-    overflow: hidden;
+    overflow: auto;
+    
 }
 
 .slider-ul{
@@ -260,7 +261,7 @@ main{
     height: fit-content;
 }
 
-@keyframes mover-slide {
+@keyframes mover-slidee {
     from{margin-left: -3855px;}
     to{margin-left: 0px;}    
 }
