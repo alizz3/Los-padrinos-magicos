@@ -447,6 +447,7 @@ footer{
         grid-template-columns: 10% 80% 10%;
             grid-template-areas: 
                 'instagram Aliz-autor github';
+                
     }
 
 
