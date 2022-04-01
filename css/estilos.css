@@ -167,11 +167,6 @@ main{
 
     
 /*personajes*/
-.personajess{
-    display: grid;
-    grid-template-columns: repeat(14, 1fr);
-    gap: 10px;
-}
 .container-personaje-1{
     width: 353px;
     height: 478px;
@@ -221,11 +216,56 @@ main{
     font-size: 2rem;
 }
 
+.img-personaje{
+    height: 25rem;
+}
 
 
 
+.slider{
+    margin: 0 auto;
+    width: 95%;
+    background-color: rgba(255, 0, 0, 0);  
+    overflow: hidden;
+}
+
+.slider-ul{
+    list-style: none;
+    /*height: max-content;*/
+    width: 10%;
 
 
+    display: grid;
+    grid-template-columns: repeat(14, 1fr);
+    gap: 10px;
+
+
+    animation: mover-slide s infinite linear;
+    animation: mover-slide 40s linear 1s infinite alternate-reverse;
+}
+
+.slider-li{
+    height: fit-content;
+}
+
+@keyframes mover-slide {
+    from{margin-left: -3855px;}
+    to{margin-left: 0px;}    
+}
+.slider-li:nth-child(1)
+.slider-li:nth-child(2)
+.slider-li:nth-child(3)
+.slider-li:nth-child(4)
+.slider-li:nth-child(5)
+.slider-li:nth-child(6)
+.slider-li:nth-child(7)
+.slider-li:nth-child(8)
+.slider-li:nth-child(9)
+.slider-li:nth-child(10)
+.slider-li:nth-child(11)
+.slider-li:nth-child(12)
+.slider-li:nth-child(13)
+.slider-li:nth-child(14)
 
 
 
@@ -450,6 +490,11 @@ footer{
                 'instagram Aliz-autor github';
                 
     }
-
+    .instagram{
+        margin-top: 0;
+    }
+    .github{
+        margin-bottom: 0;
+    }
 
 }
