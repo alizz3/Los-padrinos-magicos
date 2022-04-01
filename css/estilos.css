@@ -46,7 +46,7 @@ nav{
 }
 
 main{
-    padding-top: 100px;
+    padding-top: 120px;
     top: 10%;
 }
 .logo{
@@ -146,6 +146,9 @@ main{
 @keyframes img-background {
     from {background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), linear-gradient(150deg, rgba(239, 23, 140, 0.34) 10.94%, rgba(114, 82, 135, 0.34) 65.01%, rgba(0, 255, 25, 0.34) 100%);}
     to {background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),linear-gradient(-20deg, rgba(239, 23, 140, 0.34) 10.94%, rgba(114, 82, 135, 0.34) 65.01%, rgba(0, 255, 25, 0.34) 100%);}
+
+
+
 }
 
 
@@ -260,7 +263,37 @@ main{
 
 
 
+footer h1,a{
+    color:#FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 150%;
+}
+footer h1{
+    color:#FFFFFF;
+    display: flex;
+    margin-left: 10%;
+    justify-content: start;
+    align-items: center;
+    font-size: 150%;
+}
 
+footer h1{grid-area: Aliz-autor;}
+.instagram{grid-area: instagram;}
+.github{grid-area: github;}
+
+footer {
+    height: min-content;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)), linear-gradient(90.17deg, rgba(239, 23, 140, 0.4) 0%, rgba(114, 82, 135, 0.4) 48.44%, rgba(0, 255, 25, 0.4) 100%);
+    backdrop-filter: blur(15px);
+    display: grid;
+    grid-template-columns:  80% 20%;
+    grid-template-areas: 
+        'Aliz-autor instagram'
+        'Aliz-autor github';
+
+}
 
 
 
@@ -350,8 +383,18 @@ main{
         display: flex;
         justify-content: flex-start;
         align-items: flex-start;
-        width: 80%;
+        width: 60%;
     }
+
+    .img-index:hover {
+        animation: img-hover 0s ease-in-out 0s infinite alternate-reverse;
+    }
+
+    @keyframes img-hover {
+        from{box-shadow: 0px 0px 100px rgb(224, 70, 134);}
+        to{box-shadow: 0px 0px 100px rgb(70, 224, 78);}
+    }
+
 
 
     .titulo-index{grid-area: titulo;}
@@ -374,5 +417,23 @@ main{
         grid-template-columns: repeat(7, 1fr);
         grid-template-rows: repeat(2, 1fr);
         gap: 25px;
+    }
+
+
+
+    /*footer*/
+    footer h1,a{
+        color:#FFFFFF;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 150%;
+    }
+    footer {
+        height: min-content;
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)), linear-gradient(90.17deg, rgba(239, 23, 140, 0.4) 0%, rgba(114, 82, 135, 0.4) 48.44%, rgba(0, 255, 25, 0.4) 100%);
+        backdrop-filter: blur(15px);
+        display: grid;
+        grid-template-columns: 10% 80% 10%;
     }
 }
