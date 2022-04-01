@@ -216,12 +216,6 @@ main{
     font-size: 2rem;
 }
 
-.img-personaje{
-    height: 25rem;
-}
-
-
-
 .slider{
     margin: 0 auto;
     width: 95%;
@@ -335,7 +329,7 @@ footer h1{grid-area: Aliz-autor;}
 
 footer{
     margin-top: 5%;
-    height: min-content;
+    padding-bottom: 10px;
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)), linear-gradient(90.17deg, rgba(239, 23, 140, 0.4) 0%, rgba(114, 82, 135, 0.4) 48.44%, rgba(0, 255, 25, 0.4) 100%);
     backdrop-filter: blur(15px);
     display: grid;
