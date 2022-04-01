@@ -167,6 +167,24 @@ main{
 
     
 /*personajes*/
+
+.titulo-personajes{
+    margin: 20px auto;
+    font-family: 'poppins', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 40px;
+    text-transform: uppercase;
+    text-align: center;
+    color: rgba(255, 255, 255, 0);
+    animation: text-personajes 1s linear 1s infinite alternate-reverse;
+}
+
+@keyframes text-personajes {
+    from{ color: #ffffff; text-shadow: -5px -5px 10px #EF178C;}
+    to{color: #ffffff; text-shadow:  5px 5px 10px #00FF19;}
+}
+
 .container-personaje-1{
     width: 353px;
     height: 478px;
@@ -338,6 +356,8 @@ footer{
         'Aliz-autor instagram'
         'Aliz-autor github';
     row-gap: 20%;
+    width: 100%;
+    
 }
 
 
