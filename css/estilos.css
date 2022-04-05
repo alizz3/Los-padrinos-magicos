@@ -238,7 +238,7 @@ main{
     margin: 0 auto;
     width: 95%;
     background-color: rgba(255, 0, 0, 0);  
-    overflow: auto;
+    overflow: hidden;
     
 }
 
@@ -254,14 +254,14 @@ main{
 
 
     animation: mover-slide s infinite linear;
-    animation: mover-slide 40s linear 1s infinite alternate-reverse;
+    animation: mover-slide 20s linear 1s infinite alternate-reverse;
 }
 
 .slider-li{
     height: fit-content;
 }
 
-@keyframes mover-slidee {
+@keyframes mover-slide {
     from{margin-left: -3855px;}
     to{margin-left: 0px;}    
 }
