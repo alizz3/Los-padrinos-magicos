@@ -7,6 +7,7 @@ body {
     background-size: cover;
 }
 
+
 * {
     margin: 0;
     padding: 0;
@@ -369,6 +370,78 @@ footer{
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*sinopsis mobile*/
+
+.body-sinopsis{
+    background: url(../img/fondosinpsis.png) no-repeat fixed;
+    background-size: cover;
+    background-position-y: bottom;
+}
+
+.sinopsis-tittle{
+    color: #FFF500;
+    text-transform: uppercase;
+    text-align: start;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    animation: text-personajes-sinp 1s linear 1s infinite alternate-reverse;
+}
+
+@keyframes text-personajes-sinp {
+    from{ color: #ffffff00; text-shadow: -5px -5px 10px #fffb00;}
+    to{color: #f2ff00; text-shadow:  5px 5px 10px hsl(61, 100%, 51%);}
+}
+
+main p{
+    color: rgb(255, 255, 255);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 24px;
+    text-align: justify;
+    text-transform: capitalize;
+    background: rgba(43, 43, 43, 0.5);
+    backdrop-filter: blur(34px);
+    padding: 1rem;
+}
+
+
+.sinopsis-main{
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sinopsis-text{
+    width: 100%;
+}
+
+.imagenes{
+    margin-top: 1.5rem;
+}
+
+
+
+
+
+
 /*responsive desktop*/
 @media screen and (min-width: 768px){
     body {
@@ -510,6 +583,32 @@ footer{
     }
     .github{
         margin-bottom: 0;
+    }
+
+
+    /*sinopsis*/
+
+    .sinopsis-main{
+        width: 90%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .sinopsis-text{
+        width: 50%;
+    }
+
+    .imagenes{
+        display: flex;
+        max-width: 425px;
+        overflow: auto;
+        margin-top: 0px;
+    }
+
+    .imagenes img{
+        height: 100%;
     }
 
 }
