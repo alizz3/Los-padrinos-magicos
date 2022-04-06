@@ -435,8 +435,10 @@ main p{
 
 .imagenes{
     margin-top: 1.5rem;
+    display: flex;
+    max-width: 425px;
+    overflow: auto;
 }
-
 
 
 
