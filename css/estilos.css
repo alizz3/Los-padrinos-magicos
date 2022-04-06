@@ -436,6 +436,7 @@ main p{
 .imagenes{
     margin-top: 1.5rem;
     display: flex;
+    height: 90%;
     max-width: 425px;
     overflow: auto;
 }
